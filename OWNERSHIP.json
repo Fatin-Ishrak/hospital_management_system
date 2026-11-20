@@ -1,0 +1,84 @@
+{
+  "note": "Longest matching path wins. A path ending in / means 'everything inside this folder'. Used by scripts/*.mjs and documented in OWNERSHIP.md.",
+  "owners": {
+    "lead": "Repository owner (team lead): project scaffolding, scripts, SQL, guides",
+    "member1": "Member 1: Authentication, app shell and Admin portal",
+    "member2": "Member 2: Doctor portal, UI kit and layout",
+    "member3": "Member 3: Patient portal, shared data API and utilities"
+  },
+  "rules": [
+    {
+      "path": "src/app/",
+      "owner": "member1"
+    },
+    {
+      "path": "src/core/auth/",
+      "owner": "member1"
+    },
+    {
+      "path": "src/core/supabase/",
+      "owner": "member1"
+    },
+    {
+      "path": "src/modules/admin/",
+      "owner": "member1"
+    },
+    {
+      "path": "docs/contributions/Member-1-Contribution.md",
+      "owner": "member1"
+    },
+    {
+      "path": "src/core/ui/",
+      "owner": "member2"
+    },
+    {
+      "path": "src/core/layout/",
+      "owner": "member2"
+    },
+    {
+      "path": "src/core/hooks/",
+      "owner": "member2"
+    },
+    {
+      "path": "src/core/toast/",
+      "owner": "member2"
+    },
+    {
+      "path": "src/modules/doctor/",
+      "owner": "member2"
+    },
+    {
+      "path": "docs/contributions/Member-2-Contribution.md",
+      "owner": "member2"
+    },
+    {
+      "path": "src/core/api/",
+      "owner": "member3"
+    },
+    {
+      "path": "src/core/components/",
+      "owner": "member3"
+    },
+    {
+      "path": "src/core/utils/",
+      "owner": "member3"
+    },
+    {
+      "path": "src/modules/patient/",
+      "owner": "member3"
+    },
+    {
+      "path": "docs/contributions/Member-3-Contribution.md",
+      "owner": "member3"
+    },
+    {
+      "path": "src/core/components/PatientDetails.jsx",
+      "owner": "member2"
+    },
+    {
+      "path": "src/core/components/InvoiceView.jsx",
+      "owner": "member2"
+    }
+  ],
+  "default": "lead"
+}

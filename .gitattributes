@@ -1,0 +1,4 @@
+# Keep the same line endings for everybody (Windows, Mac, Linux, Vercel)
+* text=auto eol=lf
+*.png binary
+*.ico binary

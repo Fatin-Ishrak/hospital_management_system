@@ -1,0 +1,33 @@
+{
+  "coreVersion": 1,
+  "files": {
+    "src/app/App.jsx": "75e29277db2704b813f1084a48661c4f1a8f33952805f4d8762b0016f4f90108",
+    "src/app/NotIncluded.jsx": "36915039076a6b7e4418685381b7dbaef6b9836add49f57a28bf17e1f2c47fb9",
+    "src/app/moduleRegistry.js": "79515bbc534c0c439e4f98ac41c7998d5fb53f9a70a884af3661850f1c19decc",
+    "src/core/api/appointments.js": "087506263bf1e008655a427371ff00d7840fd7463f735623078a764687c5b736",
+    "src/core/api/helpers.js": "2633745a98e033d18962e286bbb95cc2b0b48be47b4db234bc067cc791b7f5cb",
+    "src/core/api/index.js": "a472f3718503af06cdd05fcd0ec80282dda56e2e70e3a5337269df07b5de3690",
+    "src/core/api/invoices.js": "5a5d1aa550c309537836905335f7108625afe84acefe0835d0a4b2859e3dd0b1",
+    "src/core/api/lookups.js": "bda59d4aa66774d6cf552574fc74e64f3a8549936e59251ea45b9bd28b0a0ba0",
+    "src/core/api/patients.js": "f5efebf15fa26df6fd6ef1c5a535dfc8fa590fb5ae2c945ffeb1c07b5dddd311",
+    "src/core/api/prescriptions.js": "337557720ffc9e1cfa9c9d55593d2f12533fe5c9d157ed588e69387e4b390a39",
+    "src/core/auth/AuthContext.jsx": "dbdbf99ac517044d9afec26c666b41b52e45f2cfb13a9137436407778c3684f9",
+    "src/core/auth/PortalContext.jsx": "cdf4e0ca1013bcc47ff88a2fc3606931ee2db750d44aa84fa968224c7fdf561e",
+    "src/core/auth/RequireRole.jsx": "f1e18d080aa0c2ca0feb3565be50340c1e2dd07a8ab5cbcbaeb9e2a4b0bedfb3",
+    "src/core/auth/authApi.js": "dc07b5fda5c7b3abf03130e05f42b483b94aec633eec5ae23c33d0fbb7c62bb0",
+    "src/core/auth/pages/Login.jsx": "4f616bc4a379152515425c0200d4365e0aaa92798eea7e323b7d29bf8ec87c75",
+    "src/core/components/InvoiceView.jsx": "8b031cac6b5efc4de455d26ac9476dcc6f1fd4579192f1a127c22ab3f8b510c7",
+    "src/core/components/PatientDetails.jsx": "0c9d6fd777832d7835ac69f721db2010ccbf6100d088a8179122adf5f5fe2c68",
+    "src/core/components/RescheduleModal.jsx": "4b7baf61c97df9a5d44dcf26d34f77933492f69834e9a1ee7c165e66779c830b",
+    "src/core/components/SlotPicker.jsx": "e5ef12e6f63c17cbe6fbf7b6eafdee4d3a09f714209b2cc2b7ca9a64b5cb939e",
+    "src/core/hooks/hooks.js": "931acdc13f5761268f8308d218401e5dfe406503a4ad120d5652457008b0425c",
+    "src/core/layout/AuthShell.jsx": "cfe0e881cc82404990980cc008e8a784de237675a4cba79f0d348087f1d1fe40",
+    "src/core/layout/Layout.jsx": "594cbf84d19f116997126eb836e451393601e2a150e3aefd87a58855466d048d",
+    "src/core/supabase/client.js": "6417f26c6c1a414bebecc0edae12bc7924e0e0c4decd42054ea279035a3b82c3",
+    "src/core/toast/ToastContext.jsx": "d493474095fda55be5a56f1f3e256746d15dfd81eafbbb328e7ac73d14e5efc6",
+    "src/core/ui/index.jsx": "efbcd13b1ec7e2f188b6b5408a0a8f667432d142023f561131791f487a170efd",
+    "src/core/utils/errors.js": "344a651595f12ae611b25e73fcab4bf381aa446ba78817271c18fe4c2295c473",
+    "src/core/utils/format.js": "dcc08e47259879c5a845cc26c4713dabee0e7b965576d2c5f8f6ac5f69557f9c",
+    "src/core/utils/validation.js": "c57b0e5344c090fdd53dd20ca5e313c55b6d3f5ce808e2d040e16fc2303223de"
+  }
+}

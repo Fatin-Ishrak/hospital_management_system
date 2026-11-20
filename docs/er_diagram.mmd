@@ -1,0 +1,92 @@
+erDiagram
+    AUTH_USERS ||--|| PROFILES : "login (1:1)"
+    PROFILES ||--o| DOCTORS : "may be (1:1)"
+    PROFILES ||--o| PATIENTS : "may be (1:1)"
+    DEPARTMENTS ||--|{ DOCTORS : "has (1:N)"
+    DOCTORS ||--o| DOCTOR_INVITES : "activation code (1:1)"
+    PATIENTS ||--o{ APPOINTMENTS : "books (1:N)"
+    DOCTORS ||--o{ APPOINTMENTS : "attends (1:N)"
+    APPOINTMENTS ||--o{ PRESCRIPTIONS : "has (1:N)"
+    APPOINTMENTS ||--o| INVOICES : "billed by (1:1)"
+
+    AUTH_USERS {
+        uuid id PK
+        text email
+        text encrypted_password "managed by Supabase"
+    }
+    PROFILES {
+        uuid id PK, FK
+        text email UK
+        text full_name
+        user_role role
+        timestamptz created_at
+    }
+    DEPARTMENTS {
+        int dept_id PK
+        text dept_name UK
+        text description
+    }
+    DOCTORS {
+        int doctor_id PK
+        uuid user_id FK, UK
+        int dept_id FK
+        text full_name
+        text phone
+        numeric consultation_fee
+        time work_start
+        time work_end
+        smallint_array work_days
+        boolean is_active
+    }
+    DOCTOR_INVITES {
+        int doctor_id PK, FK
+        text code UK
+        timestamptz created_at
+    }
+    PATIENTS {
+        int patient_id PK
+        uuid user_id FK, UK
+        text full_name
+        gender_type gender
+        date date_of_birth
+        text phone
+        blood_group_type blood_group
+        text address
+    }
+    APPOINTMENTS {
+        int appointment_id PK
+        int patient_id FK
+        int doctor_id FK
+        date appt_date
+        time appt_time
+        text reason
+        appt_priority priority
+        appt_status status
+        uuid created_by FK
+    }
+    PRESCRIPTIONS {
+        int prescription_id PK
+        int appointment_id FK
+        text medicine
+        text dosage
+        int duration_days
+        text instructions
+    }
+    INVOICES {
+        int invoice_id PK
+        int appointment_id FK, UK
+        numeric amount
+        payment_status payment_status
+        timestamptz issued_at
+        timestamptz paid_at
+    }
+    AUDIT_LOG {
+        int log_id PK
+        text table_name
+        int record_id
+        text action
+        text details
+        uuid actor_id
+        text actor_email
+        timestamptz performed_at
+    }

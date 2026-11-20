@@ -1,0 +1,37 @@
+{
+  "name": "hospital-management-system",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CareSphere Hospital Management System - React + Supabase (DBMS course project)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:admin": "vite --mode admin",
+    "dev:doctor": "vite --mode doctor",
+    "dev:patient": "vite --mode patient",
+    "build": "node scripts/check-core.mjs && node scripts/check-architecture.mjs && vite build",
+    "preview": "vite preview",
+    "check": "node scripts/check-core.mjs && node scripts/check-architecture.mjs",
+    "core:seal": "node scripts/check-core.mjs --seal",
+    "my-files": "node scripts/my-files.mjs",
+    "verify:supabase": "node scripts/verify-supabase.mjs",
+    "ownership:md": "node scripts/gen-ownership-md.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "lucide-react": "^1.72.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.8"
+  }
+}

@@ -1,0 +1,23 @@
+# OPTIONAL. Shows on GitHub who is responsible for which folder.
+# To use it: replace the three @usernames with your real GitHub usernames and
+# rename this file to  CODEOWNERS  (no .example). GitHub then lists the owners on each file.
+# (It does not block anybody from pushing; it is documentation for your teacher.)
+
+/src/modules/admin/                 @member1-github-username
+/src/app/                           @member1-github-username
+/src/core/auth/                     @member1-github-username
+/src/core/supabase/                 @member1-github-username
+
+/src/modules/doctor/                @member2-github-username
+/src/core/ui/                       @member2-github-username
+/src/core/layout/                   @member2-github-username
+/src/core/hooks/                    @member2-github-username
+/src/core/toast/                    @member2-github-username
+/src/core/components/PatientDetails.jsx  @member2-github-username
+/src/core/components/InvoiceView.jsx     @member2-github-username
+
+/src/modules/patient/               @member3-github-username
+/src/core/api/                      @member3-github-username
+/src/core/utils/                    @member3-github-username
+/src/core/components/SlotPicker.jsx     @member3-github-username
+/src/core/components/RescheduleModal.jsx @member3-github-username
